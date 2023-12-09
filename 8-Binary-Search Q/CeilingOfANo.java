@@ -7,6 +7,16 @@ public class CeilingOfANo {
         
     }
     static int ceiling(int[] arr, int target){
+
+        // If the target is smaller then the smallest number in the array.
+        if(target < arr[0]){
+            return -1;
+        }
+        // If target is greater then the gretest number in the array.
+        if(target > arr[arr.length-1]){
+            return -1;
+        }
+        
         int start = 0;
         int end = arr.length - 1;
 
